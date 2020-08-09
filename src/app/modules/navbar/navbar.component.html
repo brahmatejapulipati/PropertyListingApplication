@@ -1,0 +1,53 @@
+<div class="nav-bar container-fluid">
+    <div class="row">
+        <div class="col-5">
+            <button type="button" class="nav-bar-item main-item btn" routerLink='' mat-button>
+                <span>
+                    <mat-icon>home</mat-icon>Home
+                </span>
+            </button>
+        </div>
+        <div class="col-4">
+            <!-- <button class="btn" mat-icon-button [matMenuTriggerFor]="menu1" aria-label="Example icon-button with a menu" style="float: right;">
+                <mat-icon>more_vert</mat-icon>
+              </button>
+              <mat-menu #menu1="matMenu">
+                <button mat-menu-item class="btn">
+                  <mat-icon>dialpad</mat-icon>
+                  <span>Redial</span>
+                </button>
+                <button mat-menu-item disabled class="btn">
+                  <mat-icon>voicemail</mat-icon>
+                  <span>Check voice mail</span>
+                </button>
+                <button mat-menu-item class="btn">
+                  <mat-icon>notifications_off</mat-icon>
+                  <span>Disable alerts</span>
+                </button>
+              </mat-menu> -->
+            <button type="button" class="nav-bar-item item-name btn" mat-button>
+                <span>Buy</span>
+            </button>
+            <button type="button" class="nav-bar-item item-name btn" mat-button>
+                <span>Sell</span>
+            </button>
+            <button type="button" class="nav-bar-item item-name btn" mat-button>
+                <span>Rent</span>
+            </button>
+        </div>
+        <div class="col-3">
+            <button class="nav-bar-item item-name btn" [matMenuTriggerFor]="menu" mat-button style="float: right;">
+                <span>{{loggedInUserName}}</span>
+                <mat-icon style="font-size: 25px;">account_circle</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item class="btn" *ngIf="isLoggedIn" routerLink="/profile" >Profile</button>
+                <button mat-menu-item class="btn" *ngIf="isLoggedIn" routerLink="/login-dashboard" >Login Dashboard</button>
+                <button mat-menu-item class="btn" (click)="onLogout()" *ngIf="isLoggedIn; else templateName" >Logout</button>
+                <ng-template #templateName>
+                    <button mat-menu-item class="btn" (click)="onLogin()">Login</button>
+                </ng-template>
+            </mat-menu>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+.example-card {
+  max-width: 400px;
+  float: left;  
+  margin : 40px;
+}
+
+.example-header-image {
+  background-image: url('../../../assets/images/home-page-img.jpg');
+  background-size: cover;
+}
+.btn:focus{
+    box-shadow : none;
+} 

@@ -1,0 +1,46 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-6">
+            <img class="img-property" src="../../../assets/images/login-image.jpg">
+        </div>
+        <div class="col-6">
+            <div class="loginBg">
+                <div class="loginTitle">
+                    Login
+                </div>
+                <div class="container">
+                    <form class="login" [formGroup]="loginGroup">
+                        <label for="username">Username</label>
+                        <input formControlName="userName" type="text" class="form-control" id="username" placeholder="Type Your User Name"
+                            autocomplete="off">
+                        <br>
+                        <label for="password">Password</label><br>
+                        <input formControlName="password" type="password" class="form-control" id="password" placeholder="Type Your Password"
+                            autocomplete="off">
+                        <a href="#" target="blank">
+                            <p>Forgot password ?</p><br>
+                        </a>
+                        <button type="button" class="btn btn-primary text-centre" [disabled]="!loginGroup.valid" (click)="onLogin();">LOGIN</button>
+                    </form>
+                </div>
+                <div class="signup">
+                    Or Sign In Using
+                </div>
+                <div class="socialIcons">
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x facebook"></i>
+                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-google fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

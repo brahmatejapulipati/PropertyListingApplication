@@ -1,0 +1,62 @@
+.img-property {
+    width: 100%;
+    height: 450px;
+}
+.loginTitle
+{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+input{
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 0;   
+}
+input:focus {border: none;}
+p
+{
+    float: right;
+    padding-right: 2%;
+}
+button{
+    width: 50%;
+    border-radius: 10px;
+    margin-left: 25%;
+    margin-top: 2%
+}
+.signup
+{
+    padding-top: 8%;
+    padding-left: 35%;
+}
+.socialIcons
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 6%;
+}
+.fa-facebook.fa-inverse
+{
+    background-color: #3b5998;
+    border-radius: 50%;
+}
+.fa-google.fa-inverse
+{
+    background-color:red;
+    border-radius: 50%;
+}
+.fa-twitter.fa-inverse
+{
+    background-color:#1da1f2;
+    border-radius: 50%;  
+}
+h6{
+    padding : 10%;
+    text-align: center;
+}
+.error
+{
+  color: red
+}

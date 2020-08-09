@@ -1,0 +1,40 @@
+{
+  "propertyList" : [
+    {
+      "ownerName": "Teja",
+      "ownerContactName": 7777777777,
+      "imageurl": "./home-page-img.jpg",
+      "description" : "Property description goes here......."
+    },
+    {
+      "ownerName": "Teja",
+      "ownerContactName": 7777777777,
+      "imageurl": "./home-page-img.jpg",
+      "description" : "Property description goes here......."
+    },
+    {
+      "ownerName": "Teja",
+      "ownerContactName": 7777777777,
+      "imageurl": "./home-page-img.jpg",
+      "description" : "Property description goes here......."
+    },
+    {
+      "ownerName": "Teja",
+      "ownerContactName": 7777777777,
+      "imageurl": "./home-page-img.jpg",
+      "description" : "Property description goes here......."
+    },
+    {
+      "ownerName": "Teja",
+      "ownerContactName": 7777777777,
+      "imageurl": "./home-page-img.jpg",
+      "description" : "Property description goes here......."
+    },
+    {
+      "ownerName": "Teja",
+      "ownerContactName": 7777777777,
+      "imageurl": "./home-page-img.jpg",
+      "description" : "Property description goes here......."
+    }
+  ]
+}
